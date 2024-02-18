@@ -1,27 +1,37 @@
+// first eight seats are functionable here
 
-let selectedSeats = 0;
-let remainingSeats = 40;
-let totalTicketPrice = 0;
-let ticketGrandTotal = 0;
+function getSeatA1() {
+    viewSeatDetails("A1");
+}
+function getSeatA2() {
+    viewSeatDetails("A2");
+}
+function getSeatA3() {
+    viewSeatDetails("A3");
+}
+function getSeatA4() {
+    viewSeatDetails("A4");
+}
+function getSeatB1() {
+    viewSeatDetails("B1");
+}
+function getSeatB2() {
+    viewSeatDetails("B2");
+}
+function getSeatB3() {
+    viewSeatDetails("B3");
+}
+function getSeatB4() {
+    viewSeatDetails("B4");
+}
 
-const fifteenPercentCoupon = "NEW15";
-const twentyPercentCoupon = "Couple 20";
+// --------common finction for view seats------------ 
 
-function getSeatNumber() {
-    const seatNumber = document.getElementById("A1");
-    const seat = seatNumber.innerText;
+function viewSeatDetails(seatNum) {
+    const seatElement = document.getElementById(seatNum);
+    const seat = seatElement.innerText;
 
-    // below code will be common 
-
-    seatNumber.style.backgroundColor = "#1DD100";
-
-    const numberOfSelectedSeats = document.getElementById("increment-counter");
-    selectedSeats += 1;
-    numberOfSelectedSeats.innerText = selectedSeats;
-
-    const numberOfRemainingSeats = document.getElementById("total-seats");
-    remainingSeats -= 1;
-    numberOfRemainingSeats.innerText = remainingSeats;
+    seatElement.style.backgroundColor = "#1DD100";
 
     const ticketDetails = document.getElementById("ticket-details");
     const newTicketDetails = document.createElement("tr");
@@ -32,28 +42,51 @@ function getSeatNumber() {
 
     ticketDetails.appendChild(newTicketDetails);
 
+    const countTicket = (ticketDetails.childNodes.length) - 2;
+
+    const numberOfSelectedSeats = document.getElementById("increment-counter");
+    numberOfSelectedSeats.innerText = countTicket;
+
+    const numberOfRemainingSeats = document.getElementById("total-seats");
+    const remainingSeats = 40 - countTicket;
+    numberOfRemainingSeats.innerText = remainingSeats;
+
     const totalPrice = document.getElementById("total-price");
-    totalTicketPrice += 550;
+    const totalTicketPrice = 550 * countTicket;
     totalPrice.innerText = totalTicketPrice;
 
     const grandTotal = document.getElementById("grand-total");
-    ticketGrandTotal += 550;
+    const ticketGrandTotal = totalTicketPrice;
     grandTotal.innerText = ticketGrandTotal;
 
-    seatNumber.disabled = true;
+    if (countTicket == 4) {
+        setTimeout(() => { alert("You reached maximum number of tickets"); }, 1000);
+        const seatCollections = document.querySelectorAll("#seat-collections button");
+        for (let seat of seatCollections) {
+            seat.disabled = true;
+        }
+    }
 
-    return totalTicketPrice;
+    seatElement.disabled = true;
 
 }
 
+// ---------coupon discount function----------- 
 
 function applyCopuonDiscount() {
+    const fifteenPercentCoupon = "NEW15";
+    const twentyPercentCoupon = "Couple 20";
+
+    const ticketDetails = document.getElementById("ticket-details");
+    const countTicket = (ticketDetails.childNodes.length) - 2;
+    const totalTicketPrice = 550 * countTicket;
+
     const copuonText = document.getElementById("copuon-text").value;
 
     if (copuonText === fifteenPercentCoupon || copuonText === twentyPercentCoupon) {
         if (copuonText === fifteenPercentCoupon) {
 
-            const discountPrice = 550 - (550 * 0.15);
+            const discountPrice = totalTicketPrice - (totalTicketPrice * 0.15);
 
             const total = document.getElementById("grand-total");
             total.innerText = discountPrice;
@@ -62,7 +95,7 @@ function applyCopuonDiscount() {
             couponField.classList.add("hidden");
         }
         else {
-            const discountPrice = 550 - (550 * 0.20);
+            const discountPrice = totalTicketPrice - (totalTicketPrice * 0.20);
 
             const total = document.getElementById("grand-total");
             total.innerText = discountPrice;
@@ -75,12 +108,4 @@ function applyCopuonDiscount() {
         alert("invalid coupon");
     }
 }
-
-
-document.getElementById("phone-number").addEventListener("keyup", function () {
-
-    const nextButton = document.getElementById("next-btn");
-    nextButton.disabled = false;
-
-})
 

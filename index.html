@@ -70,7 +70,8 @@
                 <p class="text-lg text-white font-normal mb-6">Yes, you can run unit tests and view the results directly
                     within the app. <br>The integrated testing
                     features allow for a streamlined.</p>
-                <button class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy Tickets</button>
+                <a href="#all-seats" class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy
+                    Tickets</a>
             </div>
             <div class="inter-font absolute -bottom-14 left-40">
                 <div class="flex gap-8 justify-center ">
@@ -215,7 +216,7 @@
         </div>
 
         <!-- select seat part-1  -->
-        <div class="w-[1171px] mx-auto flex gap-12 bg-white rounded-3xl p-8">
+        <div id="all-seats" class="w-[1171px] mx-auto flex gap-12 bg-white rounded-3xl p-8">
             <div class="w-3/5 inter-font">
                 <h1 class="raleway-font text-2xl text-[#030712] font-semibold mb-6">Select Your Seat</h1>
                 <hr>
@@ -248,17 +249,17 @@
                         <span class="h-12 flex items-center">I</span>
                         <span class="h-12 flex items-center">J</span>
                     </div>
-                    <div class="w-11/12 grid grid-cols-4 gap-6">
+                    <div id="seat-collections" class="w-11/12 grid grid-cols-4 gap-6">
 
-                        <button id="A1" onclick="getSeatNumber()" class="btn">A1</button>
-                        <button id="A2" class="btn">A2</button>
-                        <button id="A3" class="btn">A3</button>
-                        <button id="A4" class="btn">A4</button>
+                        <button id="A1" onclick="getSeatA1()" class="btn">A1</button>
+                        <button id="A2" onclick="getSeatA2()" class="btn">A2</button>
+                        <button id="A3" onclick="getSeatA3()" class="btn">A3</button>
+                        <button id="A4" onclick="getSeatA4()" class="btn">A4</button>
 
-                        <button id="B1" class="btn">B1</button>
-                        <button id="B2" class="btn">B2</button>
-                        <button id="B3" class="btn">B3</button>
-                        <button id="B4" class="btn">B4</button>
+                        <button id="B1" onclick="getSeatB1()" class="btn">B1</button>
+                        <button id="B2" onclick="getSeatB2()" class="btn">B2</button>
+                        <button id="B3" onclick="getSeatB3()" class="btn">B3</button>
+                        <button id="B4" onclick="getSeatB4()" class="btn">B4</button>
 
                         <button id="C1" class="btn">C1</button>
                         <button id="C2" class="btn">C2</button>
@@ -353,8 +354,7 @@
                             placeholder="Enter your email id">
 
                         <button id="next-btn"
-                            class="w-full bg-[#1DD100] text-white rounded-2xl py-4 my-4 text-xl font-extrabold disabled:bg-slate-400"
-                            disabled>Next</button>
+                            class="w-full bg-[#1DD100] text-white rounded-2xl py-4 my-4 text-xl font-extrabold">Next</button>
                     </form>
                     <div class="flex justify-around mt-4 underline text-[#03071299] text-base font-normal">
                         <a href="#">Terms and Conditions</a>
