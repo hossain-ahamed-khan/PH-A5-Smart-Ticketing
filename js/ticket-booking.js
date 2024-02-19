@@ -1,31 +1,18 @@
-// first eight seats are functionable here
+// -----------get id of the selected seat------------ 
 
-function getSeatA1() {
-    viewSeatDetails("A1");
-}
-function getSeatA2() {
-    viewSeatDetails("A2");
-}
-function getSeatA3() {
-    viewSeatDetails("A3");
-}
-function getSeatA4() {
-    viewSeatDetails("A4");
-}
-function getSeatB1() {
-    viewSeatDetails("B1");
-}
-function getSeatB2() {
-    viewSeatDetails("B2");
-}
-function getSeatB3() {
-    viewSeatDetails("B3");
-}
-function getSeatB4() {
-    viewSeatDetails("B4");
+const seatCollections = document.querySelectorAll("#seat-collections button");
+
+const buttonPressed = e => {
+    const selectedSeat = e.target.id;
+    viewSeatDetails(selectedSeat);
 }
 
-// --------common finction for view seats------------ 
+for (let seat of seatCollections) {
+    seat.addEventListener("click", buttonPressed);
+}
+
+
+// ---------common function to insert selected seat details to the table------------ 
 
 function viewSeatDetails(seatNum) {
     const seatElement = document.getElementById(seatNum);
@@ -68,8 +55,8 @@ function viewSeatDetails(seatNum) {
     }
 
     seatElement.disabled = true;
-
 }
+
 
 // ---------coupon discount function----------- 
 

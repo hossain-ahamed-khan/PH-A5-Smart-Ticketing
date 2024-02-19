@@ -67,9 +67,8 @@
                 <h1 class="text-6xl font-extrabold text-white mb-6">End-to-End Travel with <br><span
                         class="text-[#1DD100]">N
                         Paribahan</span></h1>
-                <p class="text-lg text-white font-normal mb-6">Yes, you can run unit tests and view the results directly
-                    within the app. <br>The integrated testing
-                    features allow for a streamlined.</p>
+                <p class="text-lg text-white font-normal mb-6">Seamless bus ticket booking platform for effortless
+                    journeys with instant <br>confirmations. Book now for ultimate convenience.</p>
                 <a href="#all-seats" class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy
                     Tickets</a>
             </div>
@@ -156,10 +155,8 @@
         <!-- bus details part  -->
         <div class="w-[1171px] mx-auto mt-28 mb-6">
             <h1 class="text-center text-4xl text-[#030712] font-bold">N.H Paribahan</h1>
-            <p class="text-center text-lg text-[#03071299] font-normal my-11">Yes, you can run unit tests and view the
-                results
-                directly within the app. The integrated <br>testing
-                features allow for a streamlined .</p>
+            <p class="text-center text-lg text-[#03071299] font-normal my-11">Navigate our intuitive ticket booking
+                section for quick and secure transactions<br> and confirm your journey with confidence.</p>
 
             <div class="h-[420px] flex justify-between bg-white rounded-3xl px-10">
                 <div class="w-2/3">
@@ -216,11 +213,10 @@
         </div>
 
         <!-- select seat part-1  -->
-        <div id="all-seats" class="w-[1171px] mx-auto flex gap-12 bg-white rounded-3xl p-8">
-            <div class="w-3/5 inter-font">
+        <div id="all-seats" class="w-[1171px] mx-auto flex bg-white rounded-3xl p-8">
+            <div class="w-3/5 inter-font pr-12 border-dashed border-r-2 border-[#0307124D]">
                 <h1 class="raleway-font text-2xl text-[#030712] font-semibold mb-6">Select Your Seat</h1>
-                <hr>
-                <div class="flex justify-between py-6">
+                <div class="flex justify-between py-6 border-dashed border-y-2 border-[#03071233]">
                     <div class="flex gap-1">
                         <img src="./images/seat-gray.png" alt="seat">
                         <p class="text-lg text-[#03071280] font-medium">Available</p>
@@ -251,15 +247,15 @@
                     </div>
                     <div id="seat-collections" class="w-11/12 grid grid-cols-4 gap-6">
 
-                        <button id="A1" onclick="getSeatA1()" class="btn">A1</button>
-                        <button id="A2" onclick="getSeatA2()" class="btn">A2</button>
-                        <button id="A3" onclick="getSeatA3()" class="btn">A3</button>
-                        <button id="A4" onclick="getSeatA4()" class="btn">A4</button>
+                        <button id="A1" class="btn">A1</button>
+                        <button id="A2" class="btn">A2</button>
+                        <button id="A3" class="btn">A3</button>
+                        <button id="A4" class="btn">A4</button>
 
-                        <button id="B1" onclick="getSeatB1()" class="btn">B1</button>
-                        <button id="B2" onclick="getSeatB2()" class="btn">B2</button>
-                        <button id="B3" onclick="getSeatB3()" class="btn">B3</button>
-                        <button id="B4" onclick="getSeatB4()" class="btn">B4</button>
+                        <button id="B1" class="btn">B1</button>
+                        <button id="B2" class="btn">B2</button>
+                        <button id="B3" class="btn">B3</button>
+                        <button id="B4" class="btn">B4</button>
 
                         <button id="C1" class="btn">C1</button>
                         <button id="C2" class="btn">C2</button>
@@ -306,9 +302,10 @@
             </div>
 
             <!-- select seat part-2  -->
-            <div class="w-2/5 inter-font">
-                <h1 class="raleway-font text-2xl text-[#030712] font-semibold mb-6">Select Your Seat</h1>
-                <hr>
+            <div class="w-2/5 inter-font pl-12">
+                <h1
+                    class="raleway-font text-2xl text-[#030712] font-semibold pb-6 border-dashed border-b-2 border-[#03071233]">
+                    Select Your Seat</h1>
                 <div class="bg-[#F7F8F8] rounded-xl py-4 px-8 my-6">
                     <table id="ticket-details" class="text-left w-full">
                         <tr class="border-dashed border-b-2 mb-3">
@@ -322,19 +319,19 @@
                     <div>
                         <div class="border-t-2 text-[#030712] text-base font-medium flex justify-between">
                             <p class="pt-4">Total Price</p>
-                            <p class="pt-4">BDT <span id="total-price">00</span></p>
+                            <p class="pt-4 pr-6">BDT <span id="total-price">00</span></p>
                         </div>
                         <div id="coupon-field" class="flex justify-between">
-                            <p class="pt-4"><input id="copuon-text" class="p-3 rounded-xl" type="text"
+                            <p class="pt-4"><input id="copuon-text" class="p-2 rounded-xl" type="text"
                                     placeholder="Have any copuon?">
                             </p>
-                            <p class="pt-4"><button id="copuon-btn" onclick="applyCopuonDiscount()"
-                                    class="bg-[#1DD100] text-white px-5 py-3 rounded-xl font-semibold text-base">Apply</button>
+                            <p class="pt-4 pr-6"><button id="copuon-btn" onclick="applyCopuonDiscount()"
+                                    class="bg-[#1DD100] text-white px-5 py-2 rounded-xl font-semibold text-base">Apply</button>
                             </p>
                         </div>
                         <div class="text-[#030712] text-base font-medium flex justify-between">
                             <p class="pt-4">Grand Total</p>
-                            <p class="pt-4">BDT <span id="grand-total">00</span></p>
+                            <p class="pt-4 pr-6">BDT <span id="grand-total">00</span></p>
                         </div>
                     </div>
                 </div>
@@ -352,10 +349,31 @@
                         <label class="text-[#030712] text-base font-semibold" for="email">Email ID</label>
                         <input class="w-full rounded-xl p-4 border my-2" type="email" name="email" id="email"
                             placeholder="Enter your email id">
-
-                        <button id="next-btn"
-                            class="w-full bg-[#1DD100] text-white rounded-2xl py-4 my-4 text-xl font-extrabold">Next</button>
                     </form>
+
+                    <!---------- modal button  ----------->
+
+                    <button id="next-btn" onclick="my_modal_1.showModal()"
+                        class="btn w-full bg-[#1DD100] text-white rounded-2xl py-2 my-4 text-xl font-extrabold">Next</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box">
+                            <div class="flex justify-center">
+                                <img src="./images/success.png" alt="success">
+                            </div>
+                            <h1 class="text-center text-[#27AE60] text-2xl font-bold my-6">SUCCESS</h1>
+                            <p class="text-center text-[#4A4A4A] text-lg font-medium px-6">Thank you for Booking Our Bus
+                                Seats.
+                                We are working hard to find the best service and deals for you.</p>
+                            <p class="text-center text-[#4A4A4A] text-lg font-light px-6 py-2">Shortly you will find a
+                                confirmation in your email.</p>
+                            <div class="flex justify-center">
+                                <button
+                                    class="btn text-center bg-[#27AE60] text-xl text-white font-semibold rounded-3xl px-8 py-2 my-4">Continue</button>
+                            </div>
+
+                        </div>
+                    </dialog>
+
                     <div class="flex justify-around mt-4 underline text-[#03071299] text-base font-normal">
                         <a href="#">Terms and Conditions</a>
                         <a href="#">Cancellation Policy</a>
@@ -373,7 +391,7 @@
         <div class="flex justify-between mb-24">
             <div>
                 <h1 class="raleway-font text-4xl font-extrabold mb-4">N-Ticket</h1>
-                <p class="text-[#FFFFFFCC] text-lg font-normal">P-Ticket is a digital platform to make your <br> daily
+                <p class="text-[#FFFFFFCC] text-lg font-normal">N-Ticket is a digital platform to make your <br> daily
                     commuting better.</p>
             </div>
             <div>
@@ -392,7 +410,7 @@
 
         <div class="flex justify-between border-dashed border-t-2 border-[#FFFFFF4D] py-12">
             <div>
-                <p class="text-base font-normal text-[#FFFFFFB3]">@all rights reserved, P-Ticket services limited.2024
+                <p class="text-base font-normal text-[#FFFFFFB3]">@all rights reserved, N-Ticket services limited.2024
                 </p>
             </div>
             <div class="text-base font-medium">
