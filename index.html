@@ -38,12 +38,12 @@
 <body class="raleway-font">
     <!-- navbar section  -->
 
-    <nav class="w-[1171px] mx-auto flex justify-between items-center my-8">
+    <nav class="w-[694px] lg:w-[1171px] mx-auto flex justify-between items-center my-8 px-2">
         <div>
-            <h1 class="text-4xl font-extrabold text-[#030712]">N-Ticket</h1>
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-[#030712]">N-Ticket</h1>
         </div>
         <div>
-            <ul class="flex gap-16 text-xl font-medium text-[#030712B3]">
+            <ul class="flex gap-3 lg:gap-16 text-xl font-medium text-[#030712B3]">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Destination</a></li>
@@ -61,44 +61,48 @@
     <!-- hero section  -->
 
     <section>
-        <div class="relative w-[1171px] mx-auto">
-            <img class="mx-auto" src="./images/banner.png" alt="hero image">
-            <div class="absolute bottom-1/3 left-56 text-center">
-                <h1 class="text-6xl font-extrabold text-white mb-6">End-to-End Travel with <br><span
+        <div class="relative w-[694px] lg:w-[1171px] mx-auto">
+            <img class="mx-auto w-[694px] lg:w-[1171px]" src="./images/banner.png" alt="hero image">
+            <div class="absolute bottom-1/3 left-28 lg:left-56 text-center">
+                <h1 class="text-3xl lg:text-6xl font-extrabold text-white mb-6">End-to-End Travel with <br><span
                         class="text-[#1DD100]">N
                         Paribahan</span></h1>
-                <p class="text-lg text-white font-normal mb-6">Seamless bus ticket booking platform for effortless
+                <p class="text-sm lg:text-lg text-white font-normal mb-6">Seamless bus ticket booking platform for
+                    effortless
                     journeys with instant <br>confirmations. Book now for ultimate convenience.</p>
                 <a href="#ticket-booking" class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy
                     Tickets</a>
             </div>
-            <div class="inter-font absolute -bottom-14 left-40">
-                <div class="flex gap-8 justify-center ">
-                    <div class="flex gap-2 bg-white px-6 py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
+            <div class="inter-font absolute -bottom-14 left-16 lg:left-40">
+                <div class="flex gap-4 lg:gap-8 justify-center ">
+                    <div
+                        class="flex gap-2 bg-white px-2 lg:px-6 py-2 lg:py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
                         <div>
                             <img src="./images/people.png" alt="peoples">
                         </div>
                         <div>
-                            <h1 class="text-3xl text-[#030712] font-bold">500K+</h1>
-                            <p class="text-lg text-[#03071299] font-normal">Registered users</p>
+                            <h1 class="text-base lg:text-3xl text-[#030712] font-bold">500K+</h1>
+                            <p class="text-sm lg:text-lg text-[#03071299] font-normal">Registered users</p>
                         </div>
                     </div>
-                    <div class="flex gap-2 bg-white px-6 py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
+                    <div
+                        class="flex gap-2 bg-white px-2 lg:px-6 py-2 lg:py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
                         <div>
                             <img src="./images/ticket-cupon.png" alt="ticket cupon">
                         </div>
                         <div>
-                            <h1 class="text-3xl text-[#030712] font-bold">1.7 lacks</h1>
-                            <p class="text-lg text-[#03071299] font-normal">Tickets sold</p>
+                            <h1 class="text-base lg:text-3xl text-[#030712] font-bold">1.7 lacks</h1>
+                            <p class="text-sm lg:text-lg text-[#03071299] font-normal">Tickets sold</p>
                         </div>
                     </div>
-                    <div class="flex gap-2 bg-white px-6 py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
+                    <div
+                        class="flex gap-2 bg-white px-2 lg:px-6 py-2 lg:py-6 rounded-3xl border-b-4 border-b-[#1DD100]">
                         <div>
                             <img src="./images/stoppage.png" alt="ticket cupon">
                         </div>
                         <div>
-                            <h1 class="text-3xl text-[#030712] font-bold">80K+</h1>
-                            <p class="text-lg text-[#03071299] font-normal">Rental partners</p>
+                            <h1 class="text-base lg:text-3xl text-[#030712] font-bold">80K+</h1>
+                            <p class="text-sm lg:text-lg text-[#03071299] font-normal">Rental partners</p>
                         </div>
                     </div>
                 </div>
@@ -109,9 +113,9 @@
 
     <!-- offers section  -->
 
-    <section class="w-[1171px] mx-auto mt-36">
+    <section class="w-[694px] lg:w-[1171px] mx-auto mt-36">
         <h1 class="text-center text-4xl text-[#030712] font-bold my-12">Best offers for you</h1>
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center flex-col lg:flex-row text-center gap-10">
             <div class="w-[550px] flex bg-[#FFBF0F] items-center px-12 rounded-3xl">
                 <div class="w-2/4 inter-font">
                     <h1 class="text-4xl text-[#030712CC] font-black">15% OFF</h1>
@@ -150,35 +154,37 @@
     <!-- ticket booking section  -->
 
     <section id="ticket-booking"
-        class="w-full mx-auto mt-12 pb-14 border-2 border-t-[#1DD100] rounded-t-[88px] bg-[#F7F8F8]">
+        class="w-[694px] lg:w-full mx-auto mt-12 pb-14 border-2 border-t-[#1DD100] rounded-t-[88px] bg-[#F7F8F8]">
 
         <!-- bus details part  -->
-        <div class="w-[1171px] mx-auto mt-28 mb-6">
-            <h1 class="text-center text-4xl text-[#030712] font-bold">N.H Paribahan</h1>
-            <p class="text-center text-lg text-[#03071299] font-normal my-11">Navigate our intuitive ticket booking
+        <div class="w-[694px] lg:w-[1171px] mx-auto mt-28 mb-6">
+            <h1 class="text-center text-2xl lg:text-4xl text-[#030712] font-bold">N.H Paribahan</h1>
+            <p class="text-center text-base lg:text-lg text-[#03071299] font-normal my-11">Navigate our intuitive ticket
+                booking
                 section for quick and secure transactions<br> and confirm your journey with confidence.</p>
 
             <div class="h-[420px] flex justify-between bg-white rounded-3xl px-10">
                 <div class="w-2/3">
-                    <div class="flex justify-between items-center p-6">
+                    <div class="flex justify-between items-center p-1 lg:p-6">
                         <div class="flex gap-2 items-center">
                             <div>
                                 <img src="./images/bus-logo.png" alt="bus">
                             </div>
                             <div>
-                                <h3 class="text-3xl text-[#030712] font-bold">Greenline Paribahan</h3>
-                                <p class="text-lg text-[#03071299] font-normal">Coach-009-WEB ! AC_Business</p>
+                                <h3 class="text-base lg:text-3xl text-[#030712] font-bold">Greenline Paribahan</h3>
+                                <p class="text-xs lg:text-lg text-[#03071299] font-normal">Coach-009-WEB ! AC_Business
+                                </p>
                             </div>
 
                         </div>
                         <button
-                            class="inter-font flex gap-1 w-44 border bg-[#1DD10026] text-[#1DD100] text-lg font-medium px-4 py-2 rounded-xl">
+                            class="inter-font flex items-center gap-1 w-44 border bg-[#1DD10026] text-[#1DD100] text-sm lg:text-lg font-medium px-2 lg:px-4 py-1 lg:py-2 rounded-xl">
                             <img src="./images/seat-green.png" alt="seat">
                             <p><span id="total-seats">40</span> Seats left</p>
                         </button>
                     </div>
 
-                    <div class="bg-[#F7F8F8] rounded-3xl p-6">
+                    <div class="bg-[#F7F8F8] rounded-3xl p-2 lg:p-6">
                         <div class="flex justify-between my-4">
                             <p class="text-[#03071299] font-semibold text-lg">Route</p>
                             <p class="text-[#030712] font-semibold text-lg">Dhaka - Sylhet</p>
@@ -189,10 +195,11 @@
                             <p class="text-[#030712] font-semibold text-lg">9:00 PM</p>
                         </div>
                         <hr>
-                        <div class="flex justify-between text-base font-medium text-[#030712CC] my-4">
-                            <p class="px-4 py-4 bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</p>
-                            <p class="px-4 py-4 bg-[#0307120D] rounded-xl">Dropping Point - Bogura</p>
-                            <p class="px-4 py-4 bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</p>
+                        <div
+                            class="flex justify-between text-xs lg:text-base font-extralight lg:font-medium text-[#030712CC] my-4">
+                            <p class="px-2 lg:px-4 py-2 lg:py-4 bg-[#0307120D] rounded-xl">Boarding Point - Laxmipur</p>
+                            <p class="px-2 lg:px-4 py-2 lg:py-4 bg-[#0307120D] rounded-xl">Dropping Point - Bogura</p>
+                            <p class="px-2 lg:px-4 py-2 lg:py-4 bg-[#0307120D] rounded-xl">Est. Time - 11 Hour</p>
                         </div>
                     </div>
 
@@ -213,8 +220,9 @@
         </div>
 
         <!-- select seat part-1  -->
-        <div id="all-seats" class="w-[1171px] mx-auto flex bg-white rounded-3xl p-8">
-            <div class="w-3/5 inter-font pr-12 border-dashed border-r-2 border-[#0307124D]">
+        <div id="all-seats"
+            class="w-[694px] lg:w-[1171px] mx-auto flex flex-col lg:flex-row bg-white rounded-3xl p-8 gap-12 lg:gap-0">
+            <div class="w-11/12 lg:w-3/5 inter-font pr-12 border-dashed border-r-2 border-[#0307124D]">
                 <h1 class="raleway-font text-2xl text-[#030712] font-semibold mb-6">Select Your Seat</h1>
                 <div class="flex justify-between py-6 border-dashed border-y-2 border-[#03071233]">
                     <div class="flex gap-1">
@@ -302,7 +310,7 @@
             </div>
 
             <!-- select seat part-2  -->
-            <div class="w-2/5 inter-font pl-12">
+            <div class="w-11/12 lg:w-2/5 inter-font pl-12">
                 <h1
                     class="raleway-font text-2xl text-[#030712] font-semibold pb-6 border-dashed border-b-2 border-[#03071233]">
                     Select Your Seat</h1>
@@ -389,11 +397,12 @@
 
     <!-- footar section  -->
 
-    <footer class="inter-font text-white w-full mx-auto bg-[#030712] py-16 px-24">
+    <footer class="w-[694px] lg:w-full inter-font text-white mx-auto bg-[#030712] py-16 px-24">
         <div class="flex justify-between mb-24">
             <div>
                 <h1 class="raleway-font text-4xl font-extrabold mb-4">N-Ticket</h1>
-                <p class="text-[#FFFFFFCC] text-lg font-normal">N-Ticket is a digital platform to make your <br> daily
+                <p class="text-[#FFFFFFCC] text-xs lg:text-lg font-extralight lg:font-normal">N-Ticket is a digital
+                    platform to make your <br> daily
                     commuting better.</p>
             </div>
             <div>
@@ -410,7 +419,8 @@
             </div>
         </div>
 
-        <div class="flex justify-between border-dashed border-t-2 border-[#FFFFFF4D] py-12">
+        <div
+            class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center justify-between border-dashed border-t-2 border-[#FFFFFF4D] py-12">
             <div>
                 <p class="text-base font-normal text-[#FFFFFFB3]">@all rights reserved, N-Ticket services limited.2024
                 </p>

@@ -106,7 +106,7 @@ function applyCopuonDiscount() {
             const disPrice = document.createElement("div");
             disPrice.innerHTML = `
             <div class="text-[#030712] text-base font-medium flex justify-between">
-                            <p class="pt-4">Discount Price</p>
+                            <p class="pt-4">Discount</p>
                             <p class="pt-4 pr-6">BDT ${discount}</p>
                         </div>`
             prices.appendChild(disPrice);
@@ -125,7 +125,7 @@ function applyCopuonDiscount() {
             const disPrice = document.createElement("div");
             disPrice.innerHTML = `
             <div class="text-[#030712] text-base font-medium flex justify-between">
-                            <p class="pt-4">Discount Price</p>
+                            <p class="pt-4">Discount</p>
                             <p class="pt-4 pr-6">BDT ${discount}</p>
                         </div>`
             prices.appendChild(disPrice);
