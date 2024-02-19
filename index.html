@@ -343,8 +343,8 @@
 
                         <label id="phone-number" class="text-[#030712] text-base font-semibold" for="phone-number">Phone
                             Number*</label>
-                        <input class="w-full rounded-xl p-4 border my-2" type="number" name="phone-number"
-                            id="phone-number" placeholder="Enter your phone numbe">
+                        <input onkeyup="invokingOnKeyUpEvent()" class="w-full rounded-xl p-4 border my-2" type="number"
+                            name="phone-number" placeholder="Enter your phone numbe">
 
                         <label class="text-[#030712] text-base font-semibold" for="email">Email ID</label>
                         <input class="w-full rounded-xl p-4 border my-2" type="email" name="email" id="email"
@@ -354,7 +354,8 @@
                     <!---------- modal button  ----------->
 
                     <button id="next-btn" onclick="my_modal_1.showModal()"
-                        class="btn w-full bg-[#1DD100] text-white rounded-2xl py-2 my-4 text-xl font-extrabold">Next</button>
+                        class="btn w-full bg-[#1DD100] text-white rounded-2xl py-2 my-4 text-xl font-extrabold"
+                        disabled>Next</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
                             <div class="flex justify-center">

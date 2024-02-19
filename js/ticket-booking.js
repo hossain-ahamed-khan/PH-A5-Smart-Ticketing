@@ -11,6 +11,20 @@ for (let seat of seatCollections) {
     seat.addEventListener("click", buttonPressed);
 }
 
+// --------next button enable/disable functionality-------------- 
+
+function invokingOnKeyUpEvent() {
+    const ticketDetails = document.getElementById("ticket-details");
+    const countTicket = (ticketDetails.childNodes.length) - 2;
+    const numValue = event.target.value;
+    console.log(typeof numValue);
+
+    if (numValue.length > 0 && countTicket > 0) {
+        nextBtn = document.getElementById("next-btn");
+        nextBtn.disabled = false;
+    }
+}
+
 
 // ---------common function to insert selected seat details to the table------------ 
 
@@ -19,6 +33,7 @@ function viewSeatDetails(seatNum) {
     const seat = seatElement.innerText;
 
     seatElement.style.backgroundColor = "#1DD100";
+    seatElement.style.color = "#FFFFFF";
 
     const ticketDetails = document.getElementById("ticket-details");
     const newTicketDetails = document.createElement("tr");
