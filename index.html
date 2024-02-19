@@ -69,7 +69,7 @@
                         Paribahan</span></h1>
                 <p class="text-lg text-white font-normal mb-6">Seamless bus ticket booking platform for effortless
                     journeys with instant <br>confirmations. Book now for ultimate convenience.</p>
-                <a href="#all-seats" class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy
+                <a href="#ticket-booking" class="text-[#030712] text-xl font-bold bg-[#1DD100] px-4 py-2 rounded-xl">Buy
                     Tickets</a>
             </div>
             <div class="inter-font absolute -bottom-14 left-40">
@@ -316,24 +316,25 @@
                             <th class="pb-3">Price</th>
                         </tr>
                     </table>
-                    <div>
+                    <div id="prices">
                         <div class="border-t-2 text-[#030712] text-base font-medium flex justify-between">
                             <p class="pt-4">Total Price</p>
                             <p class="pt-4 pr-6">BDT <span id="total-price">00</span></p>
                         </div>
-                        <div id="coupon-field" class="flex justify-between">
-                            <p class="pt-4"><input id="copuon-text" class="p-2 rounded-xl" type="text"
-                                    placeholder="Have any copuon?">
-                            </p>
-                            <p class="pt-4 pr-6"><button id="copuon-btn" onclick="applyCopuonDiscount()"
-                                    class="bg-[#1DD100] text-white px-5 py-2 rounded-xl font-semibold text-base">Apply</button>
-                            </p>
+                        <div id="coupon-field" class="flex justify-between pt-4 pr-6">
+                            <input id="copuon-text" class="p-2 rounded-xl" type="text" placeholder="Have any copuon?">
+                            <button id="copuon-btn" onclick="applyCopuonDiscount()"
+                                class="bg-[#0307121A] text-[#03071266] px-5 py-2 rounded-xl font-semibold text-base"
+                                disabled>Apply</button>
                         </div>
+                    </div>
+                    <div>
                         <div class="text-[#030712] text-base font-medium flex justify-between">
                             <p class="pt-4">Grand Total</p>
                             <p class="pt-4 pr-6">BDT <span id="grand-total">00</span></p>
                         </div>
                     </div>
+
                 </div>
 
                 <div>
